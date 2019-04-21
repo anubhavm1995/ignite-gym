@@ -1,0 +1,155 @@
+
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" >-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<!--<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">-->
+
+<script>
+    
+var today = new Date();
+var doj = new Date('10/05/2017');
+
+const diffTime = Math.abs(doj.getTime() - today.getTime());
+
+const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+const totalExp = diffDays/365;
+document.getElementById("spanDate").innerHTML  = totalExp.toFixed(3)+' yrs';
+
+</script>  
+
+<style>
+#abtme
+{
+
+    font-size: 14px;
+}
+#spanDate
+{
+    color: aquamarine;
+    font-size: 15px;
+}
+#logbutton
+{
+margin-left:730px;
+
+}
+
+#about1
+{
+margin-left:30px;
+
+}
+.nav-tabs {
+	margin-bottom: 15px;
+}
+
+.sign-with {
+	margin-top: 25px;
+	padding: 20px;
+}
+
+div#OR {
+	height: 30px;
+	width: 30px;
+	border: 1px solid #C2C2C2;
+	border-radius: 50%;
+	font-weight: bold;
+	line-height: 28px;
+	text-align: center;
+	font-size: 12px;
+	float: right;
+	position: absolute;
+	right: -16px;
+	top: 40%;
+	z-index: 1;
+	background: #DFDFDF;
+}
+
+#rows {
+	margin-left: 30px;
+}
+
+#forms {
+	margin-left: 35px;
+}
+
+#custom-bootstrap-carousel {
+	margin-left: 20px;
+}
+
+#pwd {
+	margin-left: 20px;
+}
+</style>
+</head>
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<img src="cv.png" height="100px" width="150px">
+
+				<p class="footer-links">
+					<a href="" title="Home">Home</a>&emsp; &emsp;
+						
+					<a href="">FAQ</a>&emsp;&emsp;
+					
+					
+				</p>
+
+				<p class="footer-company-name"> Copyright &copy; TeamA_MJA68 2017</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Resume Maker Pvt. Ltd.</span> Gurgaon</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>08588836383</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:anubhavm1995@gmail.com">Mail Here</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<div class="footer-company-about" id="abtme">
+					<span>About me</span>
+					Working as a Developer in TATA Consultancy Services.<br>
+                    Work Experience : <b><i id="spanDate"></i></b>
+				</div>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/anubhavm1995" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/anubhavm1995" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/anubhavm1995" target="_blank"><i class="fa fa-linkedin"></i></a>
+					
+                    
+				</div>
+
+			</div>
+
+		</footer>
+
+</html>

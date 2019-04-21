@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ignite Gym</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>    
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script src="../function.js"></script>
+    <style>
+        label
+        {
+            color: aliceblue;
+
+        }
+
+        body {
+            margin-top: 50px;
+            background-image: url("../Images/GymOwnrMain.jpg");
+            background-size: cover;
+        }
+        #mainArea
+        {
+            text-align: justify;
+            align-content: center;    
+        }
+            
+
+    </style>
+
+    </head>
+    <body >
+        
+
+        <br><br>
+        <div class="container-fluid" id="mainArea">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4" >
+                <form id="myForm" >
+                    <div class="form-group">
+                        <label for="fName">First Name:</label>
+                        <input type="text" class="form-control" id="fName" placeholder="Enter First Name" name="fName" required>
+                    </div>  
+                    <div class="form-group">
+                        <label for="lName">Last Name:</label>
+                        <input type="text" class="form-control" id="lName" placeholder="Enter Last Name" name="lName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mob">Mobile Number:</label>
+                        <input type="number" class="form-control" id="mob" placeholder="Enter Phone Number" name="mob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Id:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fees">Amount:</label>
+                        <input type="number" class="form-control" id="fees" placeholder="Enter Amount" name="fees" required>
+                    </div>
+
+                    <input type="button" value="Submit" class="btn btn-primary" style="align-content:" onclick="RegUser()">
+                </form>
+                </div>
+            </div>
+
+
+
+        </div> 
+
+
+    </body>
+
+</html>
